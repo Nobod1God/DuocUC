@@ -1,0 +1,29 @@
+def resta(a,b):
+    return a -b
+(resta(30,10))
+# muestra 20 como resultado
+def resta1(a,b):
+    return a -b
+resta1(b=30,a=10)
+# muestra -20 como resultado
+def funcion():
+    return "Bienvenidos a Python"
+frase = funcion()
+"""print(frase)"""
+# muestra Bienvenidos a Python como resultado
+def resta2(a=None, b=None):
+    if a== None or b == None:
+        print("Error, faltan parametros a la funcion ")
+        return
+    return a-b
+"""resta2()"""
+# muestra Error, faltan parametros a la funcion como resultado
+def calculo(precio, descuento):
+    return precio - (precio * descuento/100)
+datos =[10000, 10]
+"""print("el monto final a pagar es : ", calculo(*datos))"""
+# el monto final a pagar es :  9000.0
+def saludo(nombre, mensaje="Python"):
+    print(mensaje, nombre)
+"""saludo(mensaje="Buen dia", nombre="Pedro")"""
+# Buen dia Pedro
